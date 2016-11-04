@@ -9,10 +9,15 @@
   "author": "VanDerNyd",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.17.5",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-js-minify": "0.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-useref": "^3.1.2"
   },
   "dependencies": {
+    "compiled": "^1.19.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
   }
