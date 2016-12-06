@@ -7,14 +7,18 @@ var miniJs = require('gulp-js-minify');
 var notify = require("gulp-notify");
 var browserSync = require('browser-sync');
 var jsFinal = require('gulp-useref');
+var jade = require('jade');
+var prefixer = require('css-prefixer');
 
 
 
 
-//utils
+
+//gulp notify
 
 gulp.src("./src/test.ext")
   .pipe(notify("Found file: <%= file.relative %>!"));
+
 
 
   
@@ -29,6 +33,7 @@ gulp.task('sass', function () {
 		message: 'Shit on this line <%= error.message %>',
         sound: 'Gayyy',
 	}))
+    
     .pipe(gulp.dest('./build/'));
     
     
